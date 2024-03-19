@@ -989,6 +989,46 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\59f96e81-00fb-4302-b9e5-2e6a20c7771a_Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\images\\59f96e81-00fb-4302-b9e5-2e6a20c7771a_Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\5f817c32-d2a3-400f-9224-64ad8d2a0d67_Hinh-anh-avatar-cute-Facebook.jpg",
+      "PackagePath": "staticwebassets\\images\\5f817c32-d2a3-400f-9224-64ad8d2a0d67_Hinh-anh-avatar-cute-Facebook.jpg"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\6f54d718-9ca7-49b0-b3c0-a2caf8bdb5b2_4.jpg",
+      "PackagePath": "staticwebassets\\images\\6f54d718-9ca7-49b0-b3c0-a2caf8bdb5b2_4.jpg"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\97226865-c9ff-4b9a-b921-1d558a5cfdb4_2.jpg",
+      "PackagePath": "staticwebassets\\images\\97226865-c9ff-4b9a-b921-1d558a5cfdb4_2.jpg"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\9dab7677-a7ee-4222-a1b6-0909b4e39059_3.jpg",
+      "PackagePath": "staticwebassets\\images\\9dab7677-a7ee-4222-a1b6-0909b4e39059_3.jpg"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\a63f8c03-96fd-4f61-9b9b-5d971a6cb5d6_1.jpeg",
+      "PackagePath": "staticwebassets\\images\\a63f8c03-96fd-4f61-9b9b-5d971a6cb5d6_1.jpeg"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\ab5fea99-6c2a-43ca-b5b7-4f3b11ad5142_Microsoft.AspNetCore.Http.FormFile",
+      "PackagePath": "staticwebassets\\images\\ab5fea99-6c2a-43ca-b5b7-4f3b11ad5142_Microsoft.AspNetCore.Http.FormFile"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\default.jpg"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\images\\e6dd79ed-0111-411f-a1e2-8ed02048c74c_avatar-hai-huoc-5.jpg",
+      "PackagePath": "staticwebassets\\images\\e6dd79ed-0111-411f-a1e2-8ed02048c74c_avatar-hai-huoc-5.jpg"
+    },
+    {
+      "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
       "Id": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

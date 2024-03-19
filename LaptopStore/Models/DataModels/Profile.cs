@@ -14,6 +14,6 @@ namespace LaptopStore.Models.DataModels
         public string? Avatar { get; set; }
         public DateTime? Dob { get; set; }
 
-        public virtual Account Account { get; set; } = null!;
+        public virtual Account UsernameNavigation { get; set; } = null!;
     }
 }

@@ -1,0 +1,101 @@
+﻿@using LaptopStore.Models.DataModels
+@model IEnumerable<LaptopStore.Models.DataModels.Order>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+
+	Layout = "~/Views/Shared/_LayoutLap.cshtml";
+}
+
+
+<section class="breadcrumb-section set-bg" data-setbg="../1LayoutLap/img/breadcrumb.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="breadcrumb__text">
+					<h2>Shopping Cart</h2>
+					<div class="breadcrumb__option">
+						<a href="./index.html">Home</a>
+						<span>Shopping Cart</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Shoping Cart Section Begin -->
+@if (Model.Count() == 0)
+{
+	<h2 style="color:red">@TempData["empty"] </h2>
+}
+else
+{
+	<section class="shoping-cart spad">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="shoping__cart__table">
+						<table>
+							<thead>
+								<tr>
+									<th class="shoping__product">Products</th>
+									<th>Price</th>
+									<th>Quantity</th>
+									<th>Total</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								@{
+									decimal total = 0;
+								}
+								@foreach (var item in Model)
+								{
+									<tr>
+										<td class="shoping__cart__item">
+											<img src="~/images/@Html.DisplayFor(modelItem => item.Product.Image)" width="200px" />
+											<h5>@Html.DisplayFor(modelItem => item.Product2.ProductName)</h5>
+										</td>
+										<td class="shoping__cart__price">
+											@Html.DisplayFor(modelItem => item.Product2.UnitPrice)
+										</td>
+										<td class="shoping__cart__quantity">
+											@Html.DisplayFor(modelItem => item.Quantity)
+										</td>
+										<td class="shoping__cart__total">
+											@item.TotalPrice
+										</td>
+
+										<form action="DeleteOrder" method="post">
+											<input name="orderId" value="@item.Id" hidden />
+										<td class="shoping__cart__item__close">
+											<button type="submit" class="icon_close"></button>
+										</td>
+										</form>
+									</tr>
+									total += item.TotalPrice;
+								}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<form method="post" action="Buy">
+					<div class="col-lg-6">
+						<div class="shoping__checkout">
+							<h5>Cart Total</h5>
+							<ul>
+								<li>Total <span>$@total</span></li>
+							</ul>
+							
+							<button type="submit" class="primary-btn">PROCEED TO CHECKOUT</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+}
+<!-- Shoping Cart Section End -->

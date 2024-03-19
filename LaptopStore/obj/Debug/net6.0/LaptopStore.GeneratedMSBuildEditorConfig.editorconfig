@@ -18,8 +18,68 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\VisualStudioDownload\ProjectC#\LaptopStore
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/HomeAdmin/AccountList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEFjY291bnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/HomeAdmin/AddNewProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEFkZE5ld1Byb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/HomeAdmin/DetailAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERldGFpbEFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/HomeAdmin/DetailProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERldGFpbFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/HomeAdmin/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEVkaXRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/HomeAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/HomeAdmin/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFByb2R1Y3RMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Access/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXENoYW5nZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Access/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXEZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Access/ForgotPasswordEnd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXEZvcmdvdFBhc3N3b3JkRW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Access/ForgotPasswordOtp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXEZvcmdvdFBhc3N3b3JkT3RwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Access/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Access/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFNpZ251cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Cart/AddToCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxBZGRUb0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Cart/ViewCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxWaWV3Q2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Home/Index.cshtml]
@@ -32,6 +92,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Home/ProductByCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0QnlDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Home/ProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Home/UpdateImg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVJbWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/VisualStudioDownload/ProjectC\#/LaptopStore/Views/Shared/Components/BrandMenu/Default.cshtml]

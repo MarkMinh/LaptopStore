@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nzEgxVSc664sAieQPHBmF9EMxWlolD25atKGQ1ykyIBOiz/EOThZGQPR2mHN7tskNYc1jdVV+WDayRsKwKJO2Q==",
+  "dgSpecHash": "7PDK9hwhtl1MYwwqdUS2i97G0TCqtWdBdyR90WU/llEjGVo6VNagBNHg/mD61GUOU9oCDBms8aLVi0Ee2nGVxQ==",
   "success": true,
   "projectFilePath": "F:\\VisualStudioDownload\\ProjectC#\\LaptopStore\\LaptopStore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

@@ -24,13 +24,12 @@ namespace LaptopStore.Models
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
+        public virtual DbSet<ProductReview> ProductReviews { get; set; } = null!;
         public virtual DbSet<Profile> Profiles { get; set; } = null!;
         public virtual DbSet<Review> Reviews { get; set; } = null!;
         public virtual DbSet<Role> Roles { get; set; } = null!;
         public virtual DbSet<Status> Statuses { get; set; } = null!;
 
-        
-        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -88,18 +87,6 @@ namespace LaptopStore.Models
                     .HasForeignKey(d => d.RoleId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Account__roleId__59063A47");
-
-                entity.HasOne(d => d.UsernameNavigation)
-                    .WithOne(p => p.Account)
-                    .HasForeignKey<Account>(d => d.Username)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Account_Cart");
-
-                entity.HasOne(d => d.Username1)
-                    .WithOne(p => p.Account)
-                    .HasForeignKey<Account>(d => d.Username)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Account_Profile");
             });
 
             modelBuilder.Entity<Brand>(entity =>
@@ -127,6 +114,12 @@ namespace LaptopStore.Models
                 entity.Property(e => e.TotalPrice)
                     .HasColumnType("decimal(18, 2)")
                     .HasColumnName("totalPrice");
+
+                entity.HasOne(d => d.UsernameNavigation)
+                    .WithOne(p => p.Cart)
+                    .HasForeignKey<Cart>(d => d.Username)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Cart_Account");
             });
 
             modelBuilder.Entity<CartOrder>(entity =>
@@ -222,8 +215,6 @@ namespace LaptopStore.Models
                     .HasMaxLength(255)
                     .HasColumnName("productName");
 
-                entity.Property(e => e.ReviewId).HasColumnName("reviewId");
-
                 entity.Property(e => e.UnitPrice).HasColumnType("decimal(18, 2)");
 
                 entity.Property(e => e.UpdateAt).HasColumnType("datetime");
@@ -239,11 +230,33 @@ namespace LaptopStore.Models
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.CategoryId)
                     .HasConstraintName("FK__Product__categor__4D94879B");
+            });
 
-                entity.HasOne(d => d.Review)
-                    .WithMany(p => p.Products)
-                    .HasForeignKey(d => d.ReviewId)
-                    .HasConstraintName("FK__Product__reviewI__4F7CD00D");
+            modelBuilder.Entity<ProductReview>(entity =>
+            {
+                entity.ToTable("Product_Review");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Description)
+                    .HasColumnType("text")
+                    .HasColumnName("description");
+
+                entity.Property(e => e.Rating).HasColumnName("rating");
+
+                entity.Property(e => e.Username)
+                    .HasMaxLength(255)
+                    .HasColumnName("username");
+
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.ProductReviews)
+                    .HasForeignKey(d => d.ProductId)
+                    .HasConstraintName("FK__Product_R__Produ__778AC167");
+
+                entity.HasOne(d => d.UsernameNavigation)
+                    .WithMany(p => p.ProductReviews)
+                    .HasForeignKey(d => d.Username)
+                    .HasConstraintName("FK__Product_R__usern__787EE5A0");
             });
 
             modelBuilder.Entity<Profile>(entity =>
@@ -282,6 +295,12 @@ namespace LaptopStore.Models
                 entity.Property(e => e.PhoneNumber)
                     .HasMaxLength(20)
                     .HasColumnName("phoneNumber");
+
+                entity.HasOne(d => d.UsernameNavigation)
+                    .WithOne(p => p.Profile)
+                    .HasForeignKey<Profile>(d => d.Username)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Profile_Account");
             });
 
             modelBuilder.Entity<Review>(entity =>

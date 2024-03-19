@@ -1,0 +1,82 @@
+﻿@model IEnumerable<LaptopStore.Models.DataModels.Product>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	ViewData["Title"] = "ProductList";
+	Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>ProductList</h1>
+
+<p>
+	<a asp-action="AddNewProduct">Create New</a>
+</p>
+<p style="color:red">@TempData["Message"]</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Id)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.ProductName)
+			</th>
+
+			<th>
+				@Html.DisplayNameFor(model => model.UnitsInStock)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Discount)
+			</th>
+
+
+			<th>
+				@Html.DisplayNameFor(model => model.Weight)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.UnitPrice)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.SoldNumber)
+			</th>
+
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Id)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.ProductName)
+				</td>
+
+				<td>
+					@Html.DisplayFor(modelItem => item.UnitsInStock)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Discount)
+				</td>
+
+
+				<td>
+					@Html.DisplayFor(modelItem => item.Weight)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.UnitPrice)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.SoldNumber)
+				</td>
+
+				<td>
+					@Html.ActionLink("Edit", "EditProduct", new { productId = item.Id }) |
+					@Html.ActionLink("Details", "DetailProduct", new { productId = item.Id }) |
+					@Html.ActionLink("Delete", "DeleteProduct", new { productId = item.Id })
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

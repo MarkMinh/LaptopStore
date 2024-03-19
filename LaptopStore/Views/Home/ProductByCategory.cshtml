@@ -4,5 +4,13 @@
     Layout = "~/Views/Shared/_LayoutLap.cshtml";
 }
 
-<h1>ProductByCategory</h1>
+@using X.PagedList.Mvc.Core;
 
+@model X.PagedList.IPagedList<LaptopStore.Models.DataModels.Product>
+@foreach (var item in Model)
+{
+	@await Html.PartialAsync("PartialProduct", item)
+}
+<div class="product__pagination">
+	@Html.PagedListPager(Model, page1 => Url.Action("ProductByCategory", new { page = page1, id = ViewBag.id }))
+</div>

@@ -41,12 +41,15 @@ namespace LaptopStore.Controllers
 
 		public IActionResult ProductDetail(int productId)
 		{
-			var product = db.Brands.SingleOrDefault(x => x.Id == productId);
-			var productImg = db.Brands.Where(x => x.Id == productId).ToList();
-			ViewBag.productImg = productImg;
+			var product = db.Products.SingleOrDefault(x => x.Id == productId);
+			
+			
 
 			return View(product);
 		}
+
+		
+		
 
 		public IActionResult Privacy()
 		{
@@ -58,5 +61,6 @@ namespace LaptopStore.Controllers
 		{
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		}
+
 	}
 }

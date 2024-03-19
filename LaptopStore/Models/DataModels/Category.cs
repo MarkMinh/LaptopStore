@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LaptopStore.Models.DataModels
-{
+namespace LaptopStore.Models.DataModels;
     public partial class Category
     {
         public Category()
@@ -15,4 +14,4 @@ namespace LaptopStore.Models.DataModels
 
         public virtual ICollection<Product> Products { get; set; }
     }
-}
+

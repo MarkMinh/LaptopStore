@@ -1,0 +1,27 @@
+﻿@model LaptopStore.Models.DataModels.Product
+
+@{
+    ViewData["Title"] = "UpdateImg";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>UpdateImg</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="UpdateImg" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" type="file" name="fileImg" class="form-control" />
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

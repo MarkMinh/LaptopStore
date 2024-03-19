@@ -1,0 +1,43 @@
+﻿@model IEnumerable<LaptopStore.Models.DataModels.Account>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "AccountList";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>AccountList</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+ 
+            <td>
+                @Html.ActionLink("Details", "DetailAccount", new { username = item.Username }) |
+                @Html.ActionLink("Ban", "BanAccount", new { username = item.Username })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

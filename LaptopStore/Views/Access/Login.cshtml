@@ -37,6 +37,7 @@
                             <h4>Hello! let's get started</h4>
                             <h6 class="font-weight-light">Sign in to continue.</h6>
                             @* <form class="pt-3"> *@
+                            <p style="color:red">@TempData["msg"]</p>
                             @using (Html.BeginForm("Login", "Access", FormMethod.Post))
                             {
                                 <div class="form-group">
@@ -71,7 +72,7 @@
                                             <input type="checkbox" class="form-check-input"> Keep me signed in
                                         </label>
                                     </div>
-                                    <a href="#" class="auth-link text-black">Forgot password?</a>
+                                    <a asp-action="ForgotPassword" class="auth-link text-black">Forgot password?</a>
                                 </div>
                                 <div class="mb-2">
                                     <button type="button" class="btn btn-block btn-facebook auth-form-btn">
@@ -79,7 +80,7 @@
                                     </button>
                                 </div>
                                 <div class="text-center mt-4 font-weight-light">
-                                    Don't have an account? <a href="register.html" class="text-primary">Create</a>
+                                    Don't have an account? <a asp-action="Signup" class="text-primary">Create</a>
                                 </div>
                             }
                         </div>

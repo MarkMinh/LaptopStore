@@ -13,7 +13,7 @@ namespace LaptopStore.Models.DataModels
         public string Username { get; set; } = null!;
         public decimal TotalPrice { get; set; }
 
-        public virtual Account Account { get; set; } = null!;
+        public virtual Account UsernameNavigation { get; set; } = null!;
         public virtual ICollection<CartOrder> CartOrders { get; set; }
     }
 }

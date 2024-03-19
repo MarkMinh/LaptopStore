@@ -34,7 +34,7 @@
 	<div class="humberger__menu__overlay"></div>
 	<div class="humberger__menu__wrapper">
 		<div class="humberger__menu__logo">
-			<a href="#"><img src="../1LayoutLap/img/logo.png" alt=""></a>
+			<a asp-controller="Home" asp-action="Index"><img src="../1LayoutLap/img/logo.png" alt=""></a>
 		</div>
 		<div class="humberger__menu__cart">
 			<ul>
@@ -56,12 +56,13 @@
 			<div class="header__top__right__auth">
 				@* <a href="#"><i class="fa fa-user"></i> Login</a> *@
 				<a asp-controller="Access" asp-action="Logout"><i class="fa fa-user"></i> Logout</a>
+				
 			</div>
 		</div>
 		<nav class="humberger__menu__nav mobile-menu">
 			<ul>
-				<li class="active"><a href="./index.html">Home</a></li>
-				<li><a href="./shop-grid.html">Shop</a></li>
+				<li class="active"><a asp-controller="Home" asp-action="Index">Home</a></li>
+				<li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
 				<li>
 					<a href="#">Pages</a>
 					<ul class="header__menu__dropdown">
@@ -133,24 +134,25 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="header__logo">
-						<a href="./index.html"><img src="../1LayoutLap/img/logo.png" alt=""></a>
+						<a asp-controller="Home" asp-action="Index" ><img src="../1LayoutLap/img/logo.png" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<nav class="header__menu">
 						<ul>
 							<li class="active"><a href="./index.html">Home</a></li>
-							<li><a href="./shop-grid.html">Shop</a></li>
+							<li><a asp-area="admin" asp-controller="HomeAdmin" asp-action="ProductList">Dashboard</a></li>
+							<li><a asp-controller="Cart" asp-action="ViewCart">Shoping Cart</a></li>
 							<li>
 								<a href="#">Pages</a>
 								<ul class="header__menu__dropdown">
 									<li><a href="./shop-details.html">Shop Details</a></li>
-									<li><a href="./shoping-cart.html">Shoping Cart</a></li>
+									<li><a asp-controller="Cart" asp-action="ViewCart">Shoping Cart</a></li>
 									<li><a href="./checkout.html">Check Out</a></li>
 									<li><a href="./blog-details.html">Blog Details</a></li>
 								</ul>
 							</li>
-							<li><a href="./blog.html">Blog</a></li>
+							<li><a asp-controller="Access" asp-action="ChangePassword">Change Password</a></li>
 							<li><a href="./contact.html">Contact</a></li>
 						</ul>
 					</nav>

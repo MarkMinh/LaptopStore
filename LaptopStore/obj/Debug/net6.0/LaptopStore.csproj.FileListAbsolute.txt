@@ -266,3 +266,4 @@ F:\VisualStudioDownload\ProjectC#\LaptopStore\bin\Debug\net6.0\JetBrains.Annotat
 F:\VisualStudioDownload\ProjectC#\LaptopStore\bin\Debug\net6.0\X.PagedList.dll
 F:\VisualStudioDownload\ProjectC#\LaptopStore\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
 F:\VisualStudioDownload\ProjectC#\LaptopStore\obj\Debug\net6.0\LaptopStore.MvcApplicationPartsAssemblyInfo.cs
+F:\VisualStudioDownload\ProjectC#\LaptopStore\bin\Debug\net6.0\AutoMapper.dll
